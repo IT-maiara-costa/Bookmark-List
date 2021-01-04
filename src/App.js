@@ -9,8 +9,9 @@ function App() {
     <div className="App">
       <BookmarkContextProvider>
         <Navbar />
-        <BookmarkList />
         <BookmarkForm />
+        <BookmarkList />
+       
       </BookmarkContextProvider>
     </div>
   );
