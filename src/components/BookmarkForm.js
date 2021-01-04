@@ -20,7 +20,7 @@ const BookmarkForm = () => {
             <input type="text" required placeholder="URL" value={url}
                 onChange={(e) => setUrl(e.target.value)}/>
 
-            <input type="submit" value="Adicionar" />
+            <input type="submit" value="Adicionar Link" />
         </form>
     );
 }
