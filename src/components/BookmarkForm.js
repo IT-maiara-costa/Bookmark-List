@@ -15,11 +15,10 @@ const BookmarkForm = () => {
     }
     return (
         <form onSubmit={handleSubmit}>
-            <input type="text" required placeholder="Nome" value={url_name}
+            <input type="text" required placeholder="Insira o nome do link" value={url_name}
                 onChange={(e) => setUrlName(e.target.value)}/>
-            <input type="text" required placeholder="URL" value={url}
+            <input type="text" required placeholder="Insira a URL do link" value={url}
                 onChange={(e) => setUrl(e.target.value)}/>
-
             <input type="submit" value="Adicionar Link" />
         </form>
     );

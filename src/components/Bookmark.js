@@ -5,12 +5,12 @@ import trash from '../assets/trash.svg';
 const Bookmark = ({ bookmark }) => {
     const { dispatch } = useContext(BookmarkContext);
     return (
-        <li>
-            <div className="url-name">  {bookmark.url_name} </div>
-            <a target="_blank" rel="noopener noreferrer" href={bookmark.url} className="url"> {bookmark.url} </a>
-            <img src={trash} className="trash-icon" alt="trash icon"
-                onClick={() => dispatch({ type: 'REMOVE_BOOKMARK', id: bookmark.id })}
-            />
+        <li tabIndex="0" >
+            <div tabIndex="0" className="url-name"> {bookmark.url_name} </div>
+            <a target="_blank" rel="noopener noreferrer" href={bookmark.url} className="url" aria-label="Acessar link"> {bookmark.url} </a>
+            <button className="trash-icon" aria-label="remover link" onClick={() => dispatch({ type: 'REMOVE_BOOKMARK', id: bookmark.id })}>
+                <img aria-hidden="true" src={trash} alt="Remover Link" />
+            </button>
         </li>
     );
 }
