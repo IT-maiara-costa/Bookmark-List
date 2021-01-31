@@ -20,7 +20,7 @@
 - [x] Cadastro de links.
 - [X] Remoção de links.
 - [x] Persistência dos links com localStorage.
-- [X] Acessibilidade 
+- [X] Acessibilidade.
 
 ## Technologies
 - React.
