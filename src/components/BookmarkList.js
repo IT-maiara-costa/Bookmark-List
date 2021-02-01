@@ -13,7 +13,7 @@ const BookmarkList = () => {
             </ul>
         </div>
      ) : (
-        <div className="empty"> Nenhum link adicionado! </div>
+        <div className="empty"  tabIndex="0" aria-label="Nenhum link adicionado"> Nenhum link adicionado! </div>
      )
 }
  
